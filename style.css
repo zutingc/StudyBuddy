@@ -1,4 +1,4 @@
-/*                                  START NAVBAR                               */
+/************************************************* START NAVBAR *************************************************/
 @media(max-width:767px){
     .navbar .navbar-collapse.collapsing{ 
       height:auto !important;
@@ -53,13 +53,30 @@
     100%	{ right:-100%; }
   }
 
-  /*                                  END NAVBAR                               */
+  /************************************************* END NAVBAR *************************************************/
 
 
-  /*                                 START HOME FEED 1                              */
+  /************************************************* START HOME FEED 1 *************************************************/
   body{
     background:#ebeef0; 
   }
+
+  .homeWrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    /* align-items: center; */
+    font-family: -apple-system, sans-serif;
+  }
+
+  @media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+
 
 .img-sm {
     width: 46px;
@@ -157,18 +174,12 @@
 .mar-top {
     margin-top: 15px;
 }
-  /*                                 END HOME FEED                               */
+/************************************************** END HOME FEED *************************************************/
 
 
 .page-inner.no-page-title {
     padding-top: 30px;
 }
-/* .page-inner {
-    position: relative;
-    min-height: calc(100% - 56px);
-    padding: 20px 30px 40px 30px;
-    background: #f3f4f7;
-} */
 .card.card-white {
     background-color: #fff;
     border: 1px solid transparent;
@@ -178,6 +189,9 @@
 }
 .grid-margin {
     margin-bottom: 2rem;
+}
+ul.col {
+    list-style-type: none;
 }
 .profile-timeline ul li .timeline-item-header {
     width: 100%;
@@ -213,8 +227,8 @@
 }
 .timeline-options {
     overflow: hidden;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 8px;
+    margin-bottom: 5px;
     border-bottom: 1px solid #f1f1f1;
     padding: 10px 0 10px 0;
 }
@@ -367,3 +381,225 @@
     vertical-align: baseline;
     border-radius: 0.25em;
 }
+
+
+/************************************************* start buttons *************************************************/
+.btnUI {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    font-family: -apple-system, sans-serif;
+    flex-direction: row;
+  }
+  /**                 Like btn start                    **/
+  .likeBtn {
+    position: relative;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+  }
+  .likeBtn::after {
+    z-index: -2;
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #f6f6f8;
+    border-radius: 12px;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  .likeBtn svg {
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  .likeBtn svg path {
+    transition: all 0.2s ease;
+  }
+  .likeBtn:hover::after {
+    border-radius: 10px;
+    background: #ecfcdf;
+    transform: scale(0.88);
+  }
+  .likeBtn:hover svg path {
+    fill: #6ec620;
+  }
+  .likeBtn:active svg {
+    transform: scale(0.6);
+  }
+  
+/**                 Like btn end                    **/  
+/**                 Dislike btn start                    **/
+.dislikeBtn {
+    position: relative;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+  }
+  .dislikeBtn::after {
+    z-index: -2;
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #f6f6f8;
+    border-radius: 12px;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  .dislikeBtn svg {
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  .dislikeBtn svg path {
+    transition: all 0.2s ease;
+  }
+  .dislikeBtn:hover::after {
+    border-radius: 10px;
+    background: #ffefef;
+    transform: scale(0.88);
+  }
+  .dislikeBtn:hover svg path {
+    fill: #fa5959;
+  }
+  .dislikeBtn:active svg {
+    transform: scale(0.6);
+  }
+  
+/**                 Dislike btn end                    **/  
+/**                 Comment btn start                    **/
+.commentBtn {
+    position: relative;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+  }
+  .commentBtn::after {
+    z-index: -2;
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #f6f6f8;
+    border-radius: 12px;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  .commentBtn svg {
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  .commentBtn svg path {
+    transition: all 0.2s ease;
+  }
+  .commentBtn:hover::after {
+    border-radius: 10px;
+    background: #f8efff;
+    transform: scale(0.88);
+  }
+  .commentBtn:hover svg path {
+    fill: #a886e7;
+  }
+  .commentBtn:active svg {
+    transform: scale(0.6);
+  }
+  
+/**                 Comment btn end                    **/  
+/**                 Share btn start                    **/
+  .shareBtn {
+    position: relative;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+  }
+  .shareBtn::after {
+    z-index: -2;
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #f6f6f8;
+    border-radius: 12px;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  .shareBtn svg {
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  .shareBtn svg path {
+    transition: all 0.2s ease;
+  }
+  .shareBtn:hover::after {
+    border-radius: 10px;
+    background: #dafbf8;
+    transform: scale(0.88);
+  }
+  .shareBtn:hover svg path {
+    fill: #50d8ab;
+  }
+  .shareBtn:active svg {
+    transform: scale(0.6);
+  }
+  
+/**                 Share btn end                    **/  
+/**                 Bookmark btn start                    **/
+  .bookmarkBtn {
+    position: relative;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+  }
+  .bookmarkBtn::after {
+    z-index: -2;
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #f6f6f8;
+    border-radius: 12px;
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  .bookmarkBtn svg {
+    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  .bookmarkBtn svg path {
+    transition: all 0.2s ease;
+  }
+  .bookmarkBtn:hover::after {
+    border-radius: 10px;
+    background: #eff6ff;
+    transform: scale(0.88);
+  }
+  .bookmarkBtn:hover svg path {
+    fill: #7d9fe3;
+  }
+  .bookmarkBtn:active svg {
+    transform: scale(0.6);
+  }
+/**                 Bookmark btn start                    **/
+/************************************************* end buttons *************************************************/
