@@ -164,6 +164,9 @@
 
 .btn-sm, .btn-group-sm>.btn, .btn-icon.btn-sm {
     padding: 5px 10px !important;
+    background-color: #a632cc;
+    border-color: #a632cc;
+    
 }
 
 .mar-top {
