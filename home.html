@@ -17,7 +17,7 @@
     <!-- partial:index.partial.html -->
     <!-- Default bootstrap navbar example -->
 
-    <nav class="navbar navbar-default" style="z-index: 200;">
+    <nav class="navbar navbar-default navbar-fixed-top" style="z-index: 200; ">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -67,7 +67,7 @@
 
     <!---------------------------------------------- home feed v2 -------------------------------------------------->
     <!-- https://www.bootdey.com/snippets/view/profile-with-contact-information -->
-
+    <br><br><br>
     <div class="profile-timeline">
         <div class="homeWrapper row container flex-container ">
             <ul class="col col-lg-2">
@@ -207,7 +207,25 @@
                 <li class="timeline-item">
                     <div class="card card-white grid-margin">
                         <div class="card-body">
-                            <div class="timeline-item-header">
+                            <div class="todo">
+                                <div class="container">
+                                    <p>
+                                        <label for="new-task">Add Item</label><input id="new-task" type="text">
+                                        <div id = "add-button">
+                                            <button>Add</button>
+                                        </div>
+                                    </p>
+                                    
+                                    <h3>Todo</h3>
+                                    <ul id="incomplete-tasks">
+                                      
+                                    </ul>
+                                    
+                                    <h3>Completed</h3>
+                                    <ul id="completed-tasks">
+                                    </ul>
+                                  </div>
+                                  
                             </div>
                         </div>
                     </div>
@@ -229,6 +247,7 @@
     <script src='https://code.jquery.com/jquery-3.1.1.slim.min.js'></script>
     <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
     <script src="./script.js"></script>
+    <script type="text/javascript" src="app.js"></script>
 </body>
 
 </html>

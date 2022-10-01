@@ -603,3 +603,128 @@ ul.col {
   }
 /**                 Bookmark btn start                    **/
 /************************************************* end buttons *************************************************/
+
+
+.todo{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 2rem 0rem 2rem;
+  padding: 0.8rem;
+  text-align: left;
+  display: block;
+}
+
+.todo .container {
+  display: block;
+  width: auto;
+}
+.todo ul {
+  margin: 0;
+  padding: 0;
+}
+.todo li * {
+  float: left;
+}
+.todo li, h3 {
+  clear:both;
+  list-style:none;
+}
+.todo input, button {
+  outline: none;
+}
+.todo button {
+  background: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #888;
+  font-size: 15px;
+  width: 60px;
+  margin-right: 2px;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
+}
+.todo button:hover {
+  color: #333;
+}
+/* Heading */
+.todo h3,
+label[for='new-task'] {
+  color: #333;
+  font-weight: 700;
+  font-size: 15px;
+  border-bottom: 2px solid #ccc;
+  padding: 30px 0 10px;
+  margin: 0;
+  text-transform: uppercase;
+}
+.todo input[type="text"] {
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 18px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  color: #888;
+}
+.todo input[type="text"]:focus {
+  color: #333;
+}
+
+/* New Task */
+.todo label[for='new-task'] {
+  display: block;
+  margin: 0 0 20px;
+}
+.todo input#new-task {
+  width: relative;
+  margin-right: 1rem;
+}
+.todo p > button:hover {
+  color: #0FC57C;
+}
+
+/* Task list */
+.todo li {
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+.todo li > input[type="checkbox"] {
+  margin: 5px 10px;
+  position: relative;
+}
+.todo li > label {
+  font-size: 18px;
+  margin-right: 1rem;
+  overflow-y: scroll;
+  
+}
+.todo li >  input[type="text"] {
+  width: 200px;
+  margin-right: 1rem;
+}
+.todo li > .delete:hover {
+  color: #CF2323;
+}
+
+/* Completed */
+.todo #completed-tasks label {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Edit Task */
+.todo ul li input[type=text] {
+  display:none;
+}
+
+.todo ul li.editMode input[type=text] {
+  display:block;
+}
+
+.todo ul li.editMode label {
+  display:none;
+}
