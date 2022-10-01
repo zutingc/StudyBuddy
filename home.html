@@ -70,10 +70,11 @@
 
     <div class="profile-timeline">
         <div class="homeWrapper row container flex-container ">
-            <ul class="col col-lg-2">
+            <ul class="col col-lg-1">
             </ul>
             <!------------------------------------------- Start Feed Content ------------------------------------------>
-            <ul class="col ">
+
+            <ul class="col col-lg-7">
                 <div class="card" style="margin-bottom:2vh">
                     <textarea class="form-control" rows="2" placeholder="What are you thinking?"></textarea>
                     <div class="mar-top clearfix">
@@ -85,130 +86,278 @@
                         <a class="btn btn-trans btn-icon fa fa-file add-tooltip" href="#" style="color:#9999FF"></a>
                     </div>
                 </div>
-                <li class="timeline-item">
-                    <div class="card card-white grid-margin" style="padding-bottom: 10px !important;">
-                        <div class="card-body">
-                            <div class="timeline-item-header">
-                                <img src="https://bit.ly/3E3dHsN" alt="">
-                                <!---- avatar ----->
-                                <p>Vikash smith <span>posted a status</span></p>
-                                <small>3 hours ago</small>
-                            </div>
-                            <div class="timeline-item-post">
-                                <p>Elavita veritatis et quasi architecto beatae vitaedssddsdssdddddddddddddddddddddddddddddddddddddddddddd dicta sunt explicabo. Nemo enim
-                                    ipsam
-                                    voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.
-                                </p>
-                                <div class="timeline-options btnUI">
-                                    <span style="margin-right:5px;">100</span> <!------ need to implement like count ------>
-                                    <div class="likeBtn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                            fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
-                                            <path
-                                                d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
-                                        </svg>
-                                    </div>
-                                    <div class="dislikeBtn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                            fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                                            <path
-                                                d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
-                                        </svg>
-                                    </div>
-                                    <!----- some space----->
-                                    <!-- <span style="margin-left: 10vw;"></span> -->
-                                    <div style="margin-left: auto; margin-right: 0; display:flex">
-                                        <a data-toggle="collapse" href="#collapseExample" role="button"
-                                            aria-expanded="false" aria-controls="collapseExample"
-                                            style="color:black !important; margin-right: 0 !important;">
-                                            <div class="commentBtn">
+                <div class="grid">
+                    <!------------------------- START POST -------------------------->
+                    <li class="timeline-item undergrad CS dataStructures">
+                        <div class="card card-white grid-margin" style="padding-bottom: 10px !important;">
+                            <div class="card-body">
+                                <div class="timeline-item-header">
+                                    <!---- avatar ----->
+                                    <img src="https://bit.ly/3E3dHsN" alt="">
+                                    <p>Vikash smith <span>posted a status</span></p>
+                                    <small>3 hours ago</small>
+                                </div>
+                                <!------------------------ tagging ----------------------------->
+                                <div class="postTags">
+                                    <span class="grade category">Undergrad</span><span
+                                        class="subject category">CS</span><span class="class category">Data
+                                        Structures</span>
+                                </div>
+                                <!-------------------------------------- post content --------------------------------------------------->
+                                <div class="timeline-item-post">
+                                    <p>Elavita veritatis et quasi architecto beatae vitaedddddddddddddd dicta sunt
+                                        explicabo. Nemo enim
+                                        ipsam
+                                        voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                                        consequuntur.
+                                    </p>
+                                    <!------------------------ buttons ----------------------------->
+                                    <div class="timeline-options btnUI">
+                                        <span style="margin-right:5px;" id="numLikes">100</span>
+                                        <!------ need to implement like count ------>
+                                        <div class="likeBtn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+                                            </svg>
+                                        </div>
+                                        <div class="dislikeBtn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                                            </svg>
+                                        </div>
+                                        <div style="margin-left: auto; margin-right: 0; display:flex">
+                                            <a class="collapseBtn" data-toggle="collapse"
+                                                style="margin-right: 0 !important;">
+                                                <div class="commentBtn activeBtn">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-chat-fill" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z" />
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                            <div class="shareBtn activeBtn">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                    fill="currentColor" class="bi bi-chat-fill" viewBox="0 0 16 16">
+                                                    fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
                                                     <path
-                                                        d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z" />
+                                                        d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z" />
+                                                </svg>
+                                            </div>&nbsp;
+                                            <div class="bookmarkBtn activeBtn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-bookmark-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z" />
                                                 </svg>
                                             </div>
-                                        </a>
-                                        <div class="shareBtn">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z" />
-                                            </svg>
-                                        </div>&nbsp;
-                                        <div class="bookmarkBtn">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-bookmark-fill" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z" />
-                                            </svg>
                                         </div>
-                                        </div>
-                                </div>
-                                <!---------------------- comments ------------------------------->
-                                <div class="collapse" id="collapseExample">
-                                    <div class="timeline-comment">
-                                        <div class="timeline-comment-header">
-                                            <img src="https://bit.ly/3E3dHsN" alt="">
-                                            <p>Jamara Karle <small>1 hour ago</small></p>
-                                        </div>
-                                        <p class="timeline-comment-text">Xullamco laboris nisi ut aliquip ex ea commodo
-                                            consequat.</p>
                                     </div>
-                                    <div class="timeline-comment">
-                                        <div class="timeline-comment-header">
-                                            <img src="https://bit.ly/3E3dHsN" alt="">
-                                            <p>Lois Anderson <small>3 hours ago</small></p>
+                                    
+                                    <!---------------------- comments ------------------------------->
+                                    <div class="collapse collapseComments">
+                                        <div class="timeline-comment">
+                                            <div class="timeline-comment-header">
+                                                <img src="https://bit.ly/3E3dHsN" alt="">
+                                                <p>Jamara Karle <small>1 hour ago</small></p>
+                                            </div>
+                                            <p class="timeline-comment-text">Xullamco laboris nisi ut aliquip ex ea
+                                                commodo
+                                                consequat.</p>
                                         </div>
-                                        <p class="timeline-comment-text">Coluptate velit esse cillum dolore eu fugiat
-                                            nulla
-                                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                            officia.
-                                        </p>
+                                        <div class="timeline-comment">
+                                            <div class="timeline-comment-header">
+                                                <img src="https://bit.ly/3E3dHsN" alt="">
+                                                <p>Lois Anderson <small>3 hours ago</small></p>
+                                            </div>
+                                            <p class="timeline-comment-text">Coluptate velit esse cillum dolore eu
+                                                fugiat
+                                                nulla
+                                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                                                qui
+                                                officia.
+                                            </p>
+                                        </div>
+                                        <textarea class="form-control" placeholder="Reply"></textarea>
                                     </div>
-                                    <textarea class="form-control" placeholder="Reply"></textarea>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </li>
-                <li class="timeline-item">
-                    <div class="card card-white grid-margin">
-                        <div class="card-body">
-                            <div class="timeline-item-header">
-                                <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="">
-                                <p>Veema Walkeror <span>uploaded a photo</span></p>
-                                <small>7 hours ago</small>
-                            </div>
-                            <div class="timeline-item-post">
-                                <p>totam rem aperiam, eaque ipsa quae ab illo inventore</p>
-                                <img src="https://img.freepik.com/free-vector/abstract-blue-geometric-shapes-background_1035-17545.jpg?w=2000" alt="">
-                                <div class="timeline-options">
-                                    <a href="#"><i class="fa fa-thumbs-up"></i> Like (22)</a>
-                                    <a href="#"><i class="fa fa-comment"></i> Comment (7)</a>
-                                    <a href="#"><i class="fa fa-share"></i> Share (9)</a>
+                    </li>
+                    <!--------------------------------------------------------------->
+
+                    <!------------------------- START POST -------------------------->
+                    <li class="timeline-item K12 math geometry">
+                        <div class="card card-white grid-margin" style="padding-bottom: 10px !important;">
+                            <div class="card-body">
+                                <div class="timeline-item-header">
+                                    <!---- avatar ----->
+                                    <img src="https://bit.ly/3E3dHsN" alt="">
+                                    <p>Vikash smith <span>posted a status</span></p>
+                                    <small>3 hours ago</small>
                                 </div>
-                                <div class="timeline-comment">
-                                    <div class="timeline-comment-header">
-                                        <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="">
-                                        <p>Memila moriya <small>1 hour ago</small></p>
-                                    </div>
-                                    <p class="timeline-comment-text">Explicabo Nemo enim ipsam voluptatem quia voluptas.
+                                <!------------------------ tagging ----------------------------->
+                                <div class="postTags">
+                                    <span class="grade category">K-12</span><span
+                                        class="subject category">Math</span><span class="class category">Geometry</span>
+                                </div>
+                                <!-------------------------------------- post content --------------------------------------------------->
+                                <div class="timeline-item-post">
+                                    <p>Elavita veritatis et quasi architecto beatae vitaedddddddddddddd dicta sunt
+                                        explicabo. Nemo enim
+                                        ipsam
+                                        voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                                        consequuntur.
                                     </p>
+                                    <!------------------------ buttons ----------------------------->
+                                    <div class="timeline-options btnUI">
+                                        <span style="margin-right:5px;">100</span>
+                                        <!------ need to implement like count ------>
+                                        <div class="likeBtn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+                                            </svg>
+                                        </div>
+                                        <div class="dislikeBtn">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                                            </svg>
+                                        </div>
+                                        <div style="margin-left: auto; margin-right: 0; display:flex">
+                                            <a class="collapseBtn" data-toggle="collapse"
+                                                style="margin-right: 0 !important;">
+                                                <div class="commentBtn activeBtn">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-chat-fill" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z" />
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                            <div class="shareBtn activeBtn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z" />
+                                                </svg>
+                                            </div>&nbsp;
+                                            <div class="bookmarkBtn activeBtn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-bookmark-fill" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!---------------------- comments ------------------------------->
+                                    <div class="collapse collapseComments">
+                                        <div class="timeline-comment">
+                                            <div class="timeline-comment-header">
+                                                <img src="https://bit.ly/3E3dHsN" alt="">
+                                                <p>Jamara Karle <small>1 hour ago</small></p>
+                                            </div>
+                                            <p class="timeline-comment-text">Xullamco laboris nisi ut aliquip ex ea
+                                                commodo
+                                                consequat.</p>
+                                        </div>
+                                        <div class="timeline-comment">
+                                            <div class="timeline-comment-header">
+                                                <img src="https://bit.ly/3E3dHsN" alt="">
+                                                <p>Lois Anderson <small>3 hours ago</small></p>
+                                            </div>
+                                            <p class="timeline-comment-text">Coluptate velit esse cillum dolore eu
+                                                fugiat
+                                                nulla
+                                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                                                qui
+                                                officia.
+                                            </p>
+                                        </div>
+                                        <textarea class="form-control" placeholder="Reply"></textarea>
+                                    </div>
                                 </div>
-                                <textarea class="form-control" placeholder="Replay"></textarea>
                             </div>
                         </div>
-                    </div>
-                </li>
+                    </li>
+                    <!--------------------------------------------------------------->
+                </div>
             </ul>
             <!------------------------------------------- End Feed Content ------------------------------------------>
-            <ul class="col col-lg-7">
+            <ul class="col col-lg-3">
+                <!---- filtering posts and search bar ------------>
                 <li class="timeline-item">
                     <div class="card card-white grid-margin">
                         <div class="card-body">
                             <div class="timeline-item-header">
+                                <!------- search bar ---------->
+                                <div class="search-wrapper w-form filterBox">
+                                    <form><input class="quicksearch w-input form-control" data-name="Search"
+                                            id="quicksearch" maxlength="256" name="Search" placeholder=" Search"
+                                            type="text">
+                                    </form>
+                                </div>
+
+                                <!----------- filtering checkboxes------------- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+                                <div class="filters filterBox">
+                                    <!------- button details & collapse-->
+                                    <p class="filterTitle" style="color: #5eaf11">Grade
+                                        <a data-toggle="collapse" href="#collapseGrade">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                            </svg></a></p>
+                                    <div class="collapse in" id="collapseGrade">
+                                        <div class="button-group js-radio-button-group post" data-filter-group="grade">
+                                            <button class="gradeBtn button is-checked" data-filter="">All</button>
+                                            <button class="gradeBtn button" data-filter=".K12">K-12</button>
+                                            <button class="gradeBtn button" data-filter=".undergrad">Undergrad</button>
+                                            <button class="gradeBtn button" data-filter=".grad">Grad</button>
+                                        </div>
+                                    </div>
+                                    <!------ end of row of buttons -->
+
+                                    <p class="filterTitle" style="color: #b2be13">Subject</p>
+                                    <div class="button-group js-radio-button-group" data-filter-group="subject">
+                                        <button class="subjectBtn button is-checked" data-filter="">All</button>
+                                        <button class="subjectBtn button" data-filter=".CS">CS</button>
+                                        <button class="subjectBtn button" data-filter=".math">Math</button>
+                                        <button class="subjectBtn button" data-filter=".science">Science</button>
+                                        <button class="subjectBtn button" data-filter=".english">English</button>
+                                    </div>
+
+                                    <p class="filterTitle" style="color: #d7a62a">Class</p>
+                                    <div class="button-group js-radio-button-group" data-filter-group="class">
+                                        <button class="classBtn button is-checked" data-filter="">All</button>
+                                        <button class="classBtn button" data-filter=".preCalc">Pre-Calc</button>
+                                        <button class="classBtn button" data-filter=".geometry">Geometry</button>
+                                        <button class="classBtn button" data-filter=".dataStructures">Data
+                                            Structures</button>
+                                    </div>
+                                </div>
+
+                                <!------------------- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
                             </div>
+                        </div>
+                    </div>
+                </li>
+                <!---------------------- TDL -->
+                <li class="timeline-item">
+                    <div class="card card-white grid-margin">
+                        <div class="card-body">
+                            <div class="timeline-item-header">
+                                <p>To do list</p>
+                            </div>
+
                         </div>
                     </div>
                 </li>
@@ -216,7 +365,7 @@
 
 
             <!------------------------------------------- Start Personal Content ------------------------------------------>
-
+            
         </div>
     </div>
 
@@ -228,7 +377,13 @@
     <!-- partial -->
     <script src='https://code.jquery.com/jquery-3.1.1.slim.min.js'></script>
     <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+    
+    
     <script src="./script.js"></script>
+
+    <!-------------------- Script below contains isotope filtering JS. More info: https://codepen.io/desandro/pen/WyOZjx ----------------------->
+    <script src="https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
+    <script src="sort.js"></script>
 </body>
 
 </html>

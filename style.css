@@ -1,564 +1,749 @@
-/************************************************* START NAVBAR *************************************************/
-@media(max-width:767px){
-    .navbar .navbar-collapse.collapsing{ 
-      height:auto !important;
-    }
-    .navbar .lateral-left{
-      left:-100%; 
-      animation: slide-out-left 200ms forwards;
-    }
-    .navbar .lateral-left.open{ 
-      animation: slide-in-left 200ms forwards;
-    }
-    .navbar .lateral-right{
-      right:-100%;
-      animation: slide-out-right 200ms forwards;
-    }
-    .navbar .lateral-right.open{ 
-      animation: slide-in-right 200ms forwards;
-    }
-    .navbar .navbar-collapse{ 
-      top:0px; bottom:0px; 
-      position:fixed; 
-      width:80%; width:calc(100% - 60px); 
-      max-width:320px; 
-      height:auto !important;
-  
-      /* Optional styling */
-      background:#f8f8f8;
-      padding:30px;
-      top: 52px;
-    }
-    .navbar .lateral-left.open,
-    .navbar .lateral-right.open{
-      display:block !important;
-      overflow-y:auto;
-    }
-  }
-  
-  @keyframes slide-in-left{ 
-    0%		{ left:-100%; }
-    100%	{ left:0px; }
-  }
-  @keyframes slide-out-left{
-    0%		{ left:0px; }
-    100%	{ left:-100%; }
-  }
-  @keyframes slide-in-right{ 
-    0%		{ right:-100%; }
-    100%	{ right:0px; }
-  }
-  @keyframes slide-out-right{
-    0%		{ right:0px; }
-    100%	{ right:-100%; }
+/************************************************* BUTTONS ************************************************/
+.category {
+  margin: 3px;
+  margin-top: 12px;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+/* Tag ColorsFix */
+.grade {
+  background-color: #bdf790 !important;
+}
+.subject {
+  background-color: #f3f79e !important;
+}
+.class {
+  background-color: #fcd89f !important;
+}
+
+/************************************************* SEARCH + SORT ************************************************/
+.filterBox {
+  padding-bottom: 5px;
+}
+
+.filterTitle {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.button {
+  border-radius: 9px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  padding: 5px 10px;
+}
+
+/* Sidebar Tags ColorsFix */
+.button:hover {
+  background-color: #e7e7e7;
+}
+.button.is-checked {
+  background-color: #dcdcdc;
+}
+
+/************************************************* NAVBAR *************************************************/
+@media(max-width:767px) {
+  .navbar .navbar-collapse.collapsing {
+    height: auto !important;
   }
 
-  /************************************************* END NAVBAR *************************************************/
-
-
-  /************************************************* START HOME FEED 1 *************************************************/
-  body{
-    background:#ebeef0; 
+  .navbar .lateral-left {
+    left: -100%;
+    animation: slide-out-left 200ms forwards;
   }
 
-  .homeWrapper {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    /* justify-content: center; */
-    /* align-items: center; */
-    font-family: -apple-system, sans-serif;
+  .navbar .lateral-left.open {
+    animation: slide-in-left 200ms forwards;
   }
 
-  @media (max-width: 800px) {
-    .flex-container {
-      flex-direction: column;
-    }
+  .navbar .lateral-right {
+    right: -100%;
+    animation: slide-out-right 200ms forwards;
   }
+
+  .navbar .lateral-right.open {
+    animation: slide-in-right 200ms forwards;
+  }
+
+  .navbar .navbar-collapse {
+    top: 0px;
+    bottom: 0px;
+    position: fixed;
+    width: 80%;
+    width: calc(100% - 60px);
+    max-width: 320px;
+    height: auto !important;
+
+    /* Optional styling */
+    background: #f8f8f8;
+    padding: 30px;
+    top: 52px;
+  }
+
+  .navbar .lateral-left.open,
+  .navbar .lateral-right.open {
+    display: block !important;
+    overflow-y: auto;
+  }
+}
+
+@keyframes slide-in-left {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 0px;
+  }
+}
+
+@keyframes slide-out-left {
+  0% {
+    left: 0px;
+  }
+
+  100% {
+    left: -100%;
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    right: -100%;
+  }
+
+  100% {
+    right: 0px;
+  }
+}
+
+@keyframes slide-out-right {
+  0% {
+    right: 0px;
+  }
+
+  100% {
+    right: -100%;
+  }
+}
+
+
+/************************************************* HOME FEED 1 *************************************************/
+body {
+  background: #ebeef0;
+}
+
+.homeWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  /* align-items: center; */
+  font-family: -apple-system, sans-serif;
+}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
 
 
 .img-sm {
-    width: 46px;
-    height: 46px;
+  width: 46px;
+  height: 46px;
 }
 
 .panel {
-    box-shadow: 0 2px 0 rgba(0,0,0,0.075);
-    border-radius: 0;
-    border: 0;
-    margin-bottom: 15px;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.075);
+  border-radius: 0;
+  border: 0;
+  margin-bottom: 15px;
 }
 
-.panel .panel-footer, .panel>:last-child {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+.panel .panel-footer,
+.panel>:last-child {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
-.panel .panel-heading, .panel>:first-child {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+.panel .panel-heading,
+.panel>:first-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .panel-body {
-    padding: 25px 20px;
+  padding: 25px 20px;
 }
 
 
 .media-block .media-left {
-    display: block;
-    float: left
+  display: block;
+  float: left
 }
 
 .media-block .media-right {
-    float: right
+  float: right
 }
 
 .media-block .media-body {
-    display: block;
-    overflow: hidden;
-    width: auto
+  display: block;
+  overflow: hidden;
+  width: auto
 }
 
 .middle .media-left,
 .middle .media-right,
 .middle .media-body {
-    vertical-align: middle
+  vertical-align: middle
 }
 
-.tag.tag-sm, .btn-group-sm>.tag {
-    padding: 5px 10px;
-}
 
 .tag:not(.label) {
-    background-color: #fff;
-    padding: 6px 12px;
-    border-radius: 2px;
-    border: 1px solid #cdd6e1;
-    font-size: 12px;
-    line-height: 1.42857;
-    vertical-align: middle;
-    -webkit-transition: all .15s;
-    transition: all .15s;
+  background-color: #fff;
+  padding: 6px 12px;
+  border-radius: 2px;
+  border: 1px solid #cdd6e1;
+  font-size: 12px;
+  line-height: 1.42857;
+  vertical-align: middle;
+  -webkit-transition: all .15s;
+  transition: all .15s;
 }
-.text-muted, a.text-muted:hover, a.text-muted:focus {
-    color: #acacac;
+
+.text-muted,
+a.text-muted:hover,
+a.text-muted:focus {
+  color: #acacac;
 }
+
 .text-sm {
-    font-size: 0.9em;
+  font-size: 0.9em;
 }
-.text-5x, .text-4x, .text-5x, .text-2x, .text-lg, .text-sm, .text-xs {
-    line-height: 1.25;
+
+.text-5x,
+.text-4x,
+.text-5x,
+.text-2x,
+.text-lg,
+.text-sm,
+.text-xs {
+  line-height: 1.25;
 }
 
 .btn-trans {
-    background-color: transparent;
-    border-color: transparent;
-    color: #929292;
+  background-color: transparent;
+  border-color: transparent;
+  color: #929292;
 }
 
 .btn-icon {
-    padding-left: 9px;
-    padding-right: 9px;
+  padding-left: 9px;
+  padding-right: 9px;
 }
 
-.btn-sm, .btn-group-sm>.btn, .btn-icon.btn-sm {
-    padding: 5px 10px !important;
-    background-color: #a632cc;
-    border-color: #a632cc;
-    
-}
 
 .mar-top {
-    margin-top: 15px;
+  margin-top: 15px;
 }
+
 /************************************************** END HOME FEED *************************************************/
 
 
 .page-inner.no-page-title {
-    padding-top: 30px;
+  padding-top: 30px;
 }
+
 .card.card-white {
-    background-color: #fff;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    box-shadow: 0 0.05rem 0.01rem rgba(75, 75, 90, 0.075);
-    padding: 25px;
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: 0 0.05rem 0.01rem rgba(75, 75, 90, 0.075);
+  padding: 25px;
 }
+
 .grid-margin {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
+
 ul.col {
-    list-style-type: none;
+  list-style-type: none;
 }
+
+.timeline-item {
+  position: static !important;
+}
+
 .profile-timeline ul li .timeline-item-header {
-    width: 100%;
-    overflow: hidden;
+  width: 100%;
+  overflow: hidden;
 }
+
 .profile-timeline ul li .timeline-item-header img {
-    width: 40px;
-    height: 40px;
-    float: left;
-    margin-right: 10px;
-    border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin-right: 10px;
+  border-radius: 50%;
 }
+
 .profile-timeline ul li .timeline-item-header p {
-    margin: 0;
-    color: #000;
-    font-weight: 500;
+  margin: 0;
+  color: #000;
+  font-weight: 500;
 }
+
 .profile-timeline ul li .timeline-item-header p span {
-    margin: 0;
-    color: #8e8e8e;
-    font-weight: normal;
+  margin: 0;
+  color: #8e8e8e;
+  font-weight: normal;
 }
+
 .profile-timeline ul li .timeline-item-header small {
-    margin: 0;
-    color: #8e8e8e;
+  margin: 0;
+  color: #8e8e8e;
 }
+
 .profile-timeline ul li .timeline-item-post {
-    padding: 20px 0 0 0;
-    position: relative;
+  padding: 10px 0 0 0;
+  position: relative;
 }
-.profile-timeline ul li .timeline-item-post > img {
-    width: 100%;
+
+.profile-timeline ul li .timeline-item-post>img {
+  width: 100%;
 }
+
 .timeline-options {
-    overflow: hidden;
-    margin-top: 8px;
-    margin-bottom: 5px;
-    border-bottom: 1px solid #f1f1f1;
-    padding: 10px 0 10px 0;
+  overflow: hidden;
+  margin-top: 8px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #f1f1f1;
+  padding: 10px 0 10px 0;
 }
+
 .timeline-options a {
-    display: block;
-    margin-right: 20px;
-    float: left;
-    color: #2b2b2b;
-    text-decoration: none;
+  display: block;
+  margin-right: 20px;
+  float: left;
+  color: #2b2b2b;
+  text-decoration: none;
 }
+
 .timeline-options a i {
-    margin-right: 3px;
+  margin-right: 3px;
 }
+
 .timeline-options a:hover {
-    color: #5369f8;
+  color: #5369f8;
 }
+
 .timeline-comment {
-    overflow: hidden;
-    margin-bottom: 10px;
-    width: 100%;
-    border-bottom: 1px solid #f1f1f1;
-    padding-bottom: 5px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  width: 100%;
+  border-bottom: 1px solid #f1f1f1;
+  padding-bottom: 5px;
 }
+
 .timeline-comment .timeline-comment-header {
-    overflow: hidden;
+  overflow: hidden;
 }
+
 .timeline-comment .timeline-comment-header img {
-    width: 30px;
-    border-radius: 50%;
-    float: left;
-    margin-right: 10px;
+  width: 30px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 10px;
 }
+
 .timeline-comment .timeline-comment-header p {
-    color: #000;
-    float: left;
-    margin: 0;
-    font-weight: 500;
+  color: #000;
+  float: left;
+  margin: 0;
+  font-weight: 500;
 }
+
 .timeline-comment .timeline-comment-header small {
-    font-weight: normal;
-    color: #8e8e8e;
+  font-weight: normal;
+  color: #8e8e8e;
 }
+
 .timeline-comment p.timeline-comment-text {
-    display: block;
-    color: #2b2b2b;
-    font-size: 14px;
-    padding-left: 40px;
+  display: block;
+  color: #2b2b2b;
+  font-size: 14px;
+  padding-left: 40px;
 }
+
 .post-options {
-    overflow: hidden;
-    margin-top: 15px;
-    margin-left: 15px;
+  overflow: hidden;
+  margin-top: 15px;
+  margin-left: 15px;
 }
+
 .post-options a {
-    display: block;
-    margin-top: 5px;
-    margin-right: 20px;
-    float: left;
-    color: #2b2b2b;
-    text-decoration: none;
-    font-size: 16px !important;
+  display: block;
+  margin-top: 5px;
+  margin-right: 20px;
+  float: left;
+  color: #2b2b2b;
+  text-decoration: none;
+  font-size: 16px !important;
 }
+
 .post-options a:hover {
-    color: #5369f8;
+  color: #5369f8;
 }
+
 .online {
-    position: absolute;
-    top: 2px;
-    right: 2px;
-    display: block;
-    width: 9px;
-    height: 9px;
-    border-radius: 50%;
-    background: #ccc;
+  top: 2px;
+  right: 2px;
+  display: block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #ccc;
 }
+
 #cd-timeline::before {
-    border: 0;
-    background: #f1f1f1;
+  border: 0;
+  background: #f1f1f1;
 }
+
 .cd-timeline-content p,
 .cd-timeline-content .cd-read-more,
 .cd-timeline-content .cd-date {
-    font-size: 14px;
+  font-size: 14px;
 }
+
 .cd-timeline-img.cd-success {
-    background: #2ec5d3;
+  background: #2ec5d3;
 }
+
 .cd-timeline-img.cd-danger {
-    background: #ec5e69;
+  background: #ec5e69;
 }
+
 .cd-timeline-img.cd-info {
-    background: #5893df;
+  background: #5893df;
 }
+
 .cd-timeline-img.cd-warning {
-    background: #f1c205;
+  background: #f1c205;
 }
+
 .cd-timeline-img.cd-primary {
-    background: #9f7ce1;
+  background: #9f7ce1;
 }
+
 .page-inner.full-page {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
 }
+
 .user-profile-card {
-    text-align: center;
+  text-align: center;
 }
+
 .user-profile-image {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 10px;
-}
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  }
 
 /************************************************* start buttons *************************************************/
 .btnUI {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-    font-family: -apple-system, sans-serif;
-    flex-direction: row;
-  }
-  /**                 Like btn start                    **/
-  .likeBtn {
-    position: relative;
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 12px;
-    transition: all 0.3s ease;
-  }
-  .likeBtn::after {
-    z-index: -2;
-    position: absolute;
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: #f6f6f8;
-    border-radius: 12px;
-    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-  }
-  .likeBtn svg {
-    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-  }
-  .likeBtn svg path {
-    transition: all 0.2s ease;
-  }
-  .likeBtn:hover::after {
-    border-radius: 10px;
-    background: #ecfcdf;
-    transform: scale(0.88);
-  }
-  .likeBtn:hover svg path {
-    fill: #6ec620;
-  }
-  .likeBtn:active svg {
-    transform: scale(0.6);
-  }
-  
-/**                 Like btn end                    **/  
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  font-family: -apple-system, sans-serif;
+  flex-direction: row;
+}
+
+/**                 Like btn start                    **/
+.likeBtn {
+  position: relative;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.likeBtn::after {
+  z-index: -2;
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #f6f6f8;
+  border-radius: 12px;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.likeBtn svg {
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.likeBtn svg path {
+  transition: all 0.2s ease;
+}
+
+.likeBtn:hover::after {
+  border-radius: 10px;
+  background: #ecfcdf;
+  transform: scale(0.88);
+}
+
+/* likeBtn ColorsFix */
+.likeBtn:hover svg path {
+  fill: #6ec620;
+}
+
+.likedBtn.liked svg path{
+  fill: #38a10f !important; /* active color */
+}
+
+.likeBtn:active svg {
+  transform: scale(0.6);
+}
+
+/**                 Like btn end                    **/
 /**                 Dislike btn start                    **/
 .dislikeBtn {
-    position: relative;
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 12px;
-    transition: all 0.3s ease;
-  }
-  .dislikeBtn::after {
-    z-index: -2;
-    position: absolute;
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: #f6f6f8;
-    border-radius: 12px;
-    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-  }
-  .dislikeBtn svg {
-    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-  }
-  .dislikeBtn svg path {
-    transition: all 0.2s ease;
-  }
-  .dislikeBtn:hover::after {
-    border-radius: 10px;
-    background: #ffefef;
-    transform: scale(0.88);
-  }
-  .dislikeBtn:hover svg path {
-    fill: #fa5959;
-  }
-  .dislikeBtn:active svg {
-    transform: scale(0.6);
-  }
-  
-/**                 Dislike btn end                    **/  
+  position: relative;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.dislikeBtn::after {
+  z-index: -2;
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #f6f6f8;
+  border-radius: 12px;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.dislikeBtn svg {
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.dislikeBtn svg path {
+  transition: all 0.2s ease;
+}
+
+.dislikeBtn:hover::after {
+  border-radius: 10px;
+  background: #ffefef;
+  transform: scale(0.88);
+}
+
+/* dislikeBtn ColorsFix */
+.dislikeBtn:hover svg path {
+  fill: #fa5959;
+}
+
+.dislikeBtn.disliked svg path{
+  fill: #c92929 !important; /* active color */
+}
+
+.dislikeBtn:active svg {
+  transform: scale(0.6);
+}
+
+/**                 Dislike btn end                    **/
 /**                 Comment btn start                    **/
 .commentBtn {
-    position: relative;
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 12px;
-    transition: all 0.3s ease;
-  }
-  .commentBtn::after {
-    z-index: -2;
-    position: absolute;
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: #f6f6f8;
-    border-radius: 12px;
-    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-  }
-  .commentBtn svg {
-    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-  }
-  .commentBtn svg path {
-    transition: all 0.2s ease;
-  }
-  .commentBtn:hover::after {
-    border-radius: 10px;
-    background: #f8efff;
-    transform: scale(0.88);
-  }
-  .commentBtn:hover svg path {
-    fill: #a886e7;
-  }
-  .commentBtn:active svg {
-    transform: scale(0.6);
-  }
-  
-/**                 Comment btn end                    **/  
+  position: relative;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.commentBtn::after {
+  z-index: -2;
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #f6f6f8;
+  border-radius: 12px;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.commentBtn svg {
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.commentBtn svg path {
+  transition: all 0.2s ease;
+}
+
+.commentBtn:hover::after {
+  border-radius: 10px;
+  background: #f8efff;
+  transform: scale(0.88);
+}
+
+/* commentsBtn ColorsFix */
+.commentBtn:hover svg path {
+  fill: #a886e7;
+}
+
+.commentBtn.active svg path{
+  fill: #8e5aed !important; /* active color */
+}
+
+.commentBtn:active svg {
+  transform: scale(0.6);
+}
+
+a:hover.collapseBtn {
+  color:#000;
+}
+
+/**                 Comment btn end                    **/
 /**                 Share btn start                    **/
-  .shareBtn {
-    position: relative;
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 12px;
-    transition: all 0.3s ease;
-  }
-  .shareBtn::after {
-    z-index: -2;
-    position: absolute;
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: #f6f6f8;
-    border-radius: 12px;
-    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-  }
-  .shareBtn svg {
-    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-  }
-  .shareBtn svg path {
-    transition: all 0.2s ease;
-  }
-  .shareBtn:hover::after {
-    border-radius: 10px;
-    background: #dafbf8;
-    transform: scale(0.88);
-  }
-  .shareBtn:hover svg path {
-    fill: #50d8ab;
-  }
-  .shareBtn:active svg {
-    transform: scale(0.6);
-  }
-  
-/**                 Share btn end                    **/  
+.shareBtn {
+  position: relative;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.shareBtn::after {
+  z-index: -2;
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #f6f6f8;
+  border-radius: 12px;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.shareBtn svg {
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.shareBtn svg path {
+  transition: all 0.2s ease;
+}
+
+.shareBtn:hover::after {
+  border-radius: 10px;
+  background: #dafbf8;
+  transform: scale(0.88);
+}
+
+/* shareBtn ColorsFix */
+.shareBtn:hover svg path {
+  fill: #50d8ab;
+}
+
+.shareBtn.active svg path{
+  fill: #30be8f !important; /* active color */
+}
+
+.shareBtn:active svg {
+  transform: scale(0.6);
+}
+
+/**                 Share btn end                    **/
 /**                 Bookmark btn start                    **/
-  .bookmarkBtn {
-    position: relative;
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 12px;
-    transition: all 0.3s ease;
-  }
-  .bookmarkBtn::after {
-    z-index: -2;
-    position: absolute;
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    background: #f6f6f8;
-    border-radius: 12px;
-    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-  }
-  .bookmarkBtn svg {
-    transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-  }
-  .bookmarkBtn svg path {
-    transition: all 0.2s ease;
-  }
-  .bookmarkBtn:hover::after {
-    border-radius: 10px;
-    background: #eff6ff;
-    transform: scale(0.88);
-  }
-  .bookmarkBtn:hover svg path {
-    fill: #7d9fe3;
-  }
-  .bookmarkBtn:active svg {
-    transform: scale(0.6);
-  }
+.bookmarkBtn {
+  position: relative;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.bookmarkBtn::after {
+  z-index: -2;
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #f6f6f8;
+  border-radius: 12px;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.bookmarkBtn svg {
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.bookmarkBtn svg path {
+  transition: all 0.2s ease;
+}
+
+.bookmarkBtn:hover::after {
+  border-radius: 10px;
+  background: #eff6ff;
+  transform: scale(0.88);
+}
+
+/* shareBtn ColorsFix */
+.bookmarkBtn:hover svg path {
+  fill: #7d9fe3;
+}
+
+.bookmarkBtn.active svg path{
+  fill: #4a74c7 !important; /* active color */
+}
+
+
+.bookmarkBtn:active svg {
+  transform: scale(0.6);
+}
+
 /**                 Bookmark btn start                    **/
 /************************************************* end buttons *************************************************/
