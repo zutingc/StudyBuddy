@@ -2,6 +2,10 @@
   width: 35px;
 }
 
+.navbar-collapse {
+  font-weight:bold !important;
+}
+
 /* global adjustments */
 
 html {
@@ -38,7 +42,7 @@ html {
 }
 
 .activeBtn svg path{
-  fill: gray;
+  fill: rgb(232, 201, 177);
 }
 
 /************************************************* SEARCH + SORT ************************************************/
@@ -96,12 +100,15 @@ html {
 }
 
 /* Sidebar Tags ColorsFix */
-.navTab:hover{
-  background-color: #c2c2ff !important;
+.navTab.active {
+  background-color: #dedeff !important;
+  color:rgb(85, 63, 100) !important;
   transition: 0.3s;
 }
-.navTab.active{
-  background-color: #c2c2ff !important;
+.navTab:hover{
+  background-color: #9999ff !important;
+  color:rgb(255, 255, 255) !important;
+  font-weight: bold;
   transition: 0.4s;
 }
 
@@ -578,7 +585,7 @@ ul.col {
 
 .likeBtn svg path {
   transition: all 0.2s ease;
-  fill: gray !important;
+  fill: rgb(232, 201, 177) !important;
 }
 
 .likeBtn:hover::after {
@@ -632,7 +639,7 @@ ul.col {
 
 .dislikeBtn svg path {
   transition: all 0.2s ease;
-  fill: gray !important;
+  fill: rgb(232, 201, 177) !important;
 }
 
 .dislikeBtn:hover::after {
