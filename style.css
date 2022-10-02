@@ -89,11 +89,12 @@ html {
 }
 
 /* Sidebar Tags ColorsFix */
-.button:hover {
-  background-color: #e7e7e7;
+.navTab:hover{
+  background-color: #e7e7e7 !important;
 }
-.button.is-checked {
-  background-color: #dcdcdc;
+.navTab.active{
+  background-color: #e8dded !important;
+  color: #6c1688 !important;
 }
 
 /************************************************* NAVBAR *************************************************/
