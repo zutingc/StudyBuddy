@@ -792,3 +792,125 @@ a:hover.collapseBtn {
 
 /**                 Bookmark btn start                    **/
 /************************************************* end buttons *************************************************/
+
+
+.todo{
+  margin-top: 0px;
+  text-align: left;
+  display: block;
+}
+
+.todo .container {
+  width: fit-content;
+  margin: 0px;
+  padding: 0px;
+}
+
+.todo ul {
+  margin: 0;
+  padding: 0;
+}
+.todo li * {
+  float: left;
+}
+.todo li, h3 {
+  clear:both;
+  list-style:none;
+}
+.todo input, button {
+  outline: none;
+}
+.todo button {
+  background: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #888;
+  font-size: 15px;
+  width: 60px;
+  margin-right: 2px;
+  font-family: Helvetica;
+  cursor: pointer;
+}
+.todo button:hover {
+  color: #333;
+}
+/* Heading */
+.todo h3,
+label[for='new-task'] {
+  color: #333;
+  font-size: 16px;
+  font-weight: 900;
+  padding: 30px 0 10px;
+  margin: 0;
+}
+.todo input[type="text"] {
+  margin: 0;
+  line-height: 18px;
+  height: 18px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
+  font-family: Helvetica;
+  color: #888;
+}
+.todo input[type="text"]:focus {
+  color: #333;
+}
+
+/* New Task */
+.todo label[for='new-task'] {
+  padding-top: 0px;
+  display: block;
+}
+.todo input#new-task {
+  width: relative;
+}
+.todo p > button:hover {
+  color: #0FC57C;
+}
+
+/* Task list */
+.todo li {
+  overflow: hidden;
+  padding: 10px 0;
+}
+.todo li > input[type="checkbox"] {
+  margin: 5px 10px;
+  position: relative;
+}
+.todo li > label {
+  font-size: 15px;
+  font-weight: 500;
+  width: 200px;
+
+  margin-right: 1rem;
+  overflow-y: scroll;
+  
+}
+.todo li >  input[type="text"] {
+  width: 200px;
+  margin-right: 1rem;
+}
+.todo li > .delete:hover {
+  color: #CF2323;
+}
+
+/* Completed */
+.todo #completed-tasks label {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Edit Task */
+.todo ul li input[type=text] {
+  display:none;
+}
+
+.todo ul li.editMode input[type=text] {
+  display:block;
+}
+
+.todo ul li.editMode label {
+  display:none;
+}
