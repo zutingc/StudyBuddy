@@ -67,7 +67,7 @@ html {
 }
 
 .filterTitle {
-  font-size: 20px;
+  font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
   transition: 0.3s;
 }
@@ -89,11 +89,27 @@ html {
 }
 
 /* Sidebar Tags ColorsFix */
-.button:hover {
-  background-color: #e7e7e7;
+.navTab:hover{
+  background-color: #e7e7e7 !important;
 }
-.button.is-checked {
-  background-color: #dcdcdc;
+.navTab.active{
+  background-color: #e8dded !important;
+  color: #6c1688 !important;
+}
+
+/*    TDL tasks     */
+
+.taskLabel {
+  display: block;
+  width: 72% !important;
+  overflow-y: none !important;
+  overflow-x: none !important;
+  overflow: none !important;
+  overflow-wrap: break-word;
+}
+
+.taskBtn svg path {
+  fill: #5c5c5c;
 }
 
 /************************************************* NAVBAR *************************************************/
