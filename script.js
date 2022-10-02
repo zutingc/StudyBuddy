@@ -79,3 +79,12 @@ elementsArray.forEach(function (elem) {
     });
 });
 
+const button = document.getElementById('postButton');
+
+button.onclick = function toggleDisplay() {
+    document.getElementById("eraseForm").value = "";
+    const post = document.getElementById("togglePost");
+    if (post.style.display == "none") {
+        post.style.display = "block";
+    }
+};
