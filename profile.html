@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Profile - StudyBuddy</title>
+    <link rel="icon" href="./Images/stickies-fill.svg" type="image/svg+xml">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
+    <div class="scrollbar scrollbar-pink bordered-pink thin">
+        <div class="force-overflow"></div>
+    </div>
+
+</head>
+
+<body>
+    <!------------------------------------------- Start Navbar ------------------------------------------>
+    <nav class="navbar navbar-default navbar-fixed-top" style="z-index: 200; background-color: white;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" style="color: #9000c0"><b>StudyBuddy</b></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse lateral-right" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav bg-light" id="nav">
+                    <li><a href="./home.html" class="navTab">Home</a></li>
+                    <li><a href="./bookmarks.html" class="navTab">Bookmarks</a></li>
+                    <li><a href="./explore.html" class="navTab">Explore</a></li>
+                    <li><a href="./community.html" class="navTab">Community</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#top">To top</a></li>
+                    <li class="dropdown">
+                        <a href="./profile.html" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                            aria-haspopup="true" aria-expanded="false">Haley <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="./profile.html" class="navTab">Profile</a></li>
+                            <li><a href="./courses.html" class="navTab">Courses</a></li>
+                            <li><a href="./settings.html" class="navTab">Settings</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="./login.html" class="navTab">Log out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <!------------------------------------------- End Navbar ------------------------------------------>
+    <div class="profile-timeline">
+        <div class="homeWrapper row container flex-container ">
+            <div class="col col-lg-1"></div>
+            <div class="col col-lg-3">
+                <div class="card card-white">
+                    <div class="card-body">
+                        <div class="d-flex flex-column align-items-center text-center">
+                            <img src="Images/Haley.png" alt="Admin" class="rounded-circle" width="150">
+                            <div class="mt-3">
+                                <h4>Haley</h4>
+                                <p class="text-secondary mb-1">9th Grade Student</p>
+                                <p class="text-muted font-size-sm">Staten Island, NYC, NY</p>
+                                <button class="btn btn-primary">Follow</button>
+                                <button class="btn btn-outline-primary">Message</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin: 12px;border-top: 1px solid #e1e0e0 !important;"></div>
+                    <h2 style="font-size: 15px;">Achievements:</h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-trophy-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5c0 .538-.012 1.05-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33.076 33.076 0 0 1 2.5.5zm.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935zm10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935z" />
+                    </svg>
+                </div>
+
+                <br>
+                <div class="card mt-3">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap"
+                            style="border:none;">
+                            <h6 class="mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="feather feather-globe mr-2 icon-inline">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                                    <path
+                                        d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                                    </path>
+                                </svg>Website</h6>
+                            <span class="text-secondary">https://haley.com</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap"
+                            style="border:none; border-top: 1px solid #e1e0e0 !important;">
+                            <h6 class="mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="feather feather-github mr-2 icon-inline">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>Github</h6>
+                            <span class="text-secondary">haley</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap"
+                            style="border:none; border-top: 1px solid #e1e0e0 !important;">
+                            <h6 class="mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="feather feather-twitter mr-2 icon-inline text-info">
+                                    <path
+                                        d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                                    </path>
+                                </svg>Twitter</h6>
+                            <span class="text-secondary">@haley</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap"
+                            style="border:none; border-top: 1px solid #e1e0e0 !important;">
+                            <h6 class="mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="feather feather-instagram mr-2 icon-inline text-danger">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>Instagram</h6>
+                            <span class="text-secondary">haley</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap"
+                            style="border:none; border-top: 1px solid #e1e0e0 !important;">
+                            <h6 class="mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="feather feather-facebook mr-2 icon-inline text-primary">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                                </svg>Facebook</h6>
+                            <span class="text-secondary">haley</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col col-lg-7">
+                <div class="card card-white mb-3">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">Full Name</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">
+                                Haley Sanchez
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">Email</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">
+                                hayhayley@gmail.com
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">Phone</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">
+                                (123) 456-0789
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">Mobile</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">
+                                (232) 245-2957
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <h6 class="mb-0">Address</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">
+                                Staten Island, NYC, NY
+                            </div>
+                        </div>
+                        <hr>
+                        <!-- <div class="row">
+                <div class="col-sm-12">
+                  <a class="btn btn-info " target="__blank" href="https://www.bootdey.com/snippets/view/profile-edit-data-and-skills">Edit</a>
+                </div>
+              </div> -->
+                    </div>
+                </div>
+
+                <div class="profile-timeline">
+                    <div>
+                        <!------------------------------------------- Start Feed Content ------------------------------------------>
+                        <div class="grid">
+                            <br>
+                            <!------------------------- START POST -------------------------->
+                            <ul style="list-style-type: none; padding-inline-start: 0px;">
+                                <li class="timeline-item eachPost K12 math trig">
+                                    <div class="card card-white grid-margin" style="padding-bottom: 10px !important;">
+                                        <div class="card-body">
+                                            <div class="timeline-item-header">
+                                                <!---- avatar ----->
+                                                <img src="Images/Haley.png" alt="">
+                                                <p>You <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11"
+                                                        fill="gray" class="bi bi-trophy-fill" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5c0 .538-.012 1.05-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33.076 33.076 0 0 1 2.5.5zm.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935zm10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935z" />
+                                                    </svg> &nbsp;<span>posted a question</span></p>
+                                                <small>7 hours ago</small>
+                                            </div>
+                                            <!------------------------ tagging ----------------------------->
+                                            <div class="postTags">
+                                                <span class="grade category">K-12</span><span
+                                                    class="subject category">Math</span><span
+                                                    class="class category">Trigonometry</span>
+                                                    <span
+                                                    class="class category">Question
+                                                </span>
+                                            </div>
+                                            <!-------------------------------------- post content --------------------------------------------------->
+                                            <div class="timeline-item-post">
+                                                <p>What methods do you guys use to help remember the values of sin cos
+                                                    and tan? My teacher taugh more SOH CAH TOA,
+                                                    but I wanna know how to remember the values for 30 45 and 60 degree
+                                                    angles. Thanks in advance!
+                                                </p>
+                                                <!------------------------ buttons ----------------------------->
+                                                <div class="timeline-options btnUI">
+                                                    <span class="likeCount" style="margin-right:5px;">20</span>
+                                                    <!------ need to implement like count ------>
+                                                    <div class="likeBtn">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                            fill="currentColor" class="bi bi-caret-up-fill"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="dislikeBtn">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                            fill="currentColor" class="bi bi-caret-down-fill"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                                                        </svg>
+                                                    </div>
+                                                    <div style="margin-left: auto; margin-right: 0; display:flex">
+                                                        <a class="collapseBtn" data-toggle="collapse"
+                                                            style="margin-right: 0 !important;">
+                                                            <div class="commentBtn activeBtn">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                    height="20" fill="currentColor"
+                                                                    class="bi bi-chat-fill" viewBox="0 0 16 16">
+                                                                    <path
+                                                                        d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z" />
+                                                                </svg>
+                                                            </div>
+                                                        </a>
+                                                        <div class="shareBtn activeBtn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="20" fill="currentColor" class="bi bi-send-fill"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z" />
+                                                            </svg>
+                                                        </div>
+                                                        <div class="bookmarkBtn activeBtn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="20" fill="currentColor"
+                                                                class="bi bi-bookmark-fill" viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z" />
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!---------------------- comments ------------------------------->
+                                                <div class="collapse collapseComments">
+                                                    <div class="timeline-comment">
+                                                        <div class="timeline-comment-header">
+                                                            <img src="Images/Maru.png" alt="">
+                                                            <p>Maru <small>1 hour ago</small></p>
+                                                        </div>
+                                                        <p class="timeline-comment-text">
+                                                            I know theres a method you can do with your hand that helps
+                                                            you visualize them
+                                                            but I’m not too sure about specifics but maybe someone else
+                                                            knows what I’m talking
+                                                            about and can explain it!
+
+                                                        </p>
+                                                    </div>
+                                                    <div class="timeline-comment">
+                                                        <div class="timeline-comment-header">
+                                                            <img src="Images/Sam.png" alt="">
+                                                            <p>Sam <small>3 hours ago</small></p>
+                                                        </div>
+                                                        <p class="timeline-comment-text">
+                                                            Pls help TT. I'm also so confused
+                                                        </p>
+                                                    </div>
+                                                    <textarea class="form-control" placeholder="Reply"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!------------------------- START POST -------------------------->
+                                <li class="timeline-item eachPost K-12 language spanish">
+                                    <div class="card card-white grid-margin" style="padding-bottom: 10px !important;">
+                                        <div class="card-body">
+                                            <div class="timeline-item-header">
+                                                <!---- avatar ----->
+                                                <img src="Images/Gunther.png" alt="">
+                                                <p>Gunther <svg xmlns="http://www.w3.org/2000/svg" width="11"
+                                                        height="11" fill="gray" class="bi bi-trophy-fill"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5c0 .538-.012 1.05-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33.076 33.076 0 0 1 2.5.5zm.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935zm10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935z" />
+                                                    </svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11"
+                                                        fill="gray" class="bi bi-bookmark-star-fill"
+                                                        viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd"
+                                                            d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zM8.16 4.1a.178.178 0 0 0-.32 0l-.634 1.285a.178.178 0 0 1-.134.098l-1.42.206a.178.178 0 0 0-.098.303L6.58 6.993c.042.041.061.1.051.158L6.39 8.565a.178.178 0 0 0 .258.187l1.27-.668a.178.178 0 0 1 .165 0l1.27.668a.178.178 0 0 0 .257-.187L9.368 7.15a.178.178 0 0 1 .05-.158l1.028-1.001a.178.178 0 0 0-.098-.303l-1.42-.206a.178.178 0 0 1-.134-.098L8.16 4.1z" />
+                                                    </svg>&nbsp;
+                                                    <span>posted a resource</span></p>
+                                                <small>2 hours ago</small>
+                                            </div>
+                                            <!------------------------ tagging ----------------------------->
+                                            <div class="postTags">
+                                                <span class="grade category">K-12</span><span
+                                                    class="subject category">Language</span><span
+                                                    class="class category">Spanish
+                                                </span><span
+                                                class="class category">Resource
+                                            </span>
+                                            </div>
+                                            <!-------------------------------------- post content --------------------------------------------------->
+                                            <div class="timeline-item-post">
+                                                <p>Hi all! I’ve been studying for my spanish exam and put together a
+                                                    little study sheet that I thought
+                                                    I would share with everyone. I made the google doc public, but let
+                                                    me know if there is any problem with accessing it.
+                                                    Here is the link:
+                                                    <br>
+                                                    <a
+                                                        href>https://www.spanish.academy/blog/the-ultimate-spanish-study-guide-for-beginners/</a>
+                                                    <a class="collapseTable" data-toggle="collapse"
+                                                        href="#collapseTable"><svg xmlns="http://www.w3.org/2000/svg"
+                                                            width="16" height="16" fill="currentColor"
+                                                            class="bi bi-hash" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8.39 12.648a1.32 1.32 0 0 0-.015.18c0 .305.21.508.5.508.266 0 .492-.172.555-.477l.554-2.703h1.204c.421 0 .617-.234.617-.547 0-.312-.188-.53-.617-.53h-.985l.516-2.524h1.265c.43 0 .618-.227.618-.547 0-.313-.188-.524-.618-.524h-1.046l.476-2.304a1.06 1.06 0 0 0 .016-.164.51.51 0 0 0-.516-.516.54.54 0 0 0-.539.43l-.523 2.554H7.617l.477-2.304c.008-.04.015-.118.015-.164a.512.512 0 0 0-.523-.516.539.539 0 0 0-.531.43L6.53 5.484H5.414c-.43 0-.617.22-.617.532 0 .312.187.539.617.539h.906l-.515 2.523H4.609c-.421 0-.609.219-.609.531 0 .313.188.547.61.547h.976l-.516 2.492c-.008.04-.015.125-.015.18 0 .305.21.508.5.508.265 0 .492-.172.554-.477l.555-2.703h2.242l-.515 2.492zm-1-6.109h2.266l-.515 2.563H6.859l.532-2.563z" />
+                                                        </svg></a>
+                                                    <div id="thisTable">
+                                                        <table class="collapseTable collapse in" id="collapseTable"
+                                                            style="width:900px;padding:10px;border:1px solid #ccc!important;background:#ffffff;font-family: BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,'Fira Sans', 'Droid Sans' , 'Helvetica Neue' , Helvetica, Arial, sans-serif; ">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td
+                                                                        style="vertical-align:top;padding:0;width:300px">
+                                                                        <a href="https://docs.google.com/document/d/1_kqT9U67ykmkiETOd21G-Yl2tgYb8fhWFrzeMe-SNQM/edit"
+                                                                            id="myimagelink"><img
+                                                                                onerror="this.style.display='none'"
+                                                                                src="https://lh3.googleusercontent.com/ZMch6OX5ZgxGHzbX_WwNwdVb-IpRfVvYbdLm13iohYyzfMxVLWimHj53WWYoDBgrJ7ogeyZfCdxgCA=w1200-h630-p"
+                                                                                id="myimage"
+                                                                                style="width: 300px; height: 200px; object-fit: scale-down; object-position: center center; display: block;"></a>
+                                                                    </td>
+
+                                                                    <td>
+                                                                        <div style="margin-left:1rem;">
+                                                                            <div style="margin-bottom:0.5rem;">
+                                                                                <a href="https://docs.google.com/document/d/1_kqT9U67ykmkiETOd21G-Yl2tgYb8fhWFrzeMe-SNQM/edit"
+                                                                                    id="mytitle"
+                                                                                    style="font-size:1.2rem;font-weight:400;text-decoration:none;color:black">SASE
+                                                                                    Hackathon Notes</a>
+
+                                                                            </div>
+                                                                            <div id="mydescription"
+                                                                                style="color:dimgray;margin-bottom:0.5rem">
+                                                                                StudyBuddy aka. Khan academy but social
+                                                                                media I was thinking we could make an
+                                                                                app called StudyBuddy that will allow
+                                                                                students to upload resources (PDFS,
+                                                                                links, images) they find on the internet
+                                                                                &amp; other general tips, which will
+                                                                                then be categorized into grades/majors,
+                                                                                classes, and so forth for the ...</div>
+                                                                            <a href="https://docs.google.com/document/d/1_kqT9U67ykmkiETOd21G-Yl2tgYb8fhWFrzeMe-SNQM/edit"
+                                                                                id="myurl"
+                                                                                style="text-decoration: none">https://docs.google.com/document/d/1_kqT9U67ykmkiETOd21G-Yl2tgYb8fhWFrzeMe-SNQM/edit</a>
+                                                                        </div>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </p>
+                                                <!------------------------ buttons ----------------------------->
+                                                <div class="timeline-options btnUI">
+                                                    <span class="likeCount" style="margin-right:5px;">100</span>
+                                                    <!------ need to implement like count ------>
+                                                    <div class="likeBtn liked">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                            fill="currentColor" class="bi bi-caret-up-fill"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="dislikeBtn">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                                            fill="currentColor" class="bi bi-caret-down-fill"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                                                        </svg>
+                                                    </div>
+                                                    <div style="margin-left: auto; margin-right: 0; display:flex">
+                                                        <a class="collapseBtn" data-toggle="collapse"
+                                                            style="margin-right: 0 !important;">
+                                                            <div class="commentBtn activeBtn">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                    height="20" fill="currentColor"
+                                                                    class="bi bi-chat-fill" viewBox="0 0 16 16">
+                                                                    <path
+                                                                        d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z" />
+                                                                </svg>
+                                                            </div>
+                                                        </a>
+                                                        <div class="shareBtn activeBtn active">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="20" fill="currentColor" class="bi bi-send-fill"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z" />
+                                                            </svg>
+                                                        </div>
+                                                        <div class="bookmarkBtn activeBtn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                                                height="20" fill="currentColor"
+                                                                class="bi bi-bookmark-fill" viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z" />
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!---------------------- comments ------------------------------->
+                                                <div class="collapse collapseComments">
+                                                    <div class="timeline-comment">
+                                                        <div class="timeline-comment-header">
+                                                            <img src="Images/Clint.png" alt="">
+                                                            <p>Clint <small>1 hour ago</small></p>
+                                                        </div>
+                                                        <p class="timeline-comment-text">TYSM that helped :)</p>
+                                                    </div>
+                                                    <textarea class="form-control" placeholder="Reply"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!--------------------------------------------------------------->
+
+
+                            </ul>
+                            <!--------------------------------------------------------------->
+
+                            <!--------------------------------------------------------------->
+                        </div>
+                        </ul>
+                        <!------------------------------------------- End Feed Content ------------------------------------------>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    </div>
+    <!-- partial -->
+    <script src='https://code.jquery.com/jquery-3.1.1.slim.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+
+
+    <script src="./Scripts/script.js"></script>
+
+    <!-------------------- Script below contains isotope filtering JS. More info: https://codepen.io/desandro/pen/WyOZjx ----------------------->
+    <script src="https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
+    <script src="./Scripts/sort.js"></script>
+    <script src="./Scripts/tdl.js"></script>
+    <!-- <script src="./Scripts/linkPreview.js"></script> -->
+    <script></script>
+</body>
+
+</html>

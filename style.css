@@ -6,6 +6,7 @@
 
 html {
   overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 .row {
   margin-left: 0 !important;
@@ -37,7 +38,7 @@ html {
 }
 
 .activeBtn svg path{
-  fill: #707070;
+  fill: gray;
 }
 
 /************************************************* SEARCH + SORT ************************************************/
@@ -61,14 +62,16 @@ html {
 .class {
   background-color: #fcd89f !important;
 }
+.QType {
+  background-color: #f8cda8 !important;
+}
 
 .filterTitle:hover {
   filter: saturate(1.7);
 }
 
 .filterTitle {
-  font-size: 18px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
   transition: 0.3s;
 }
 
@@ -88,12 +91,20 @@ html {
   padding: 4px 9px;
 }
 
+.is-checked {
+  background-color: rgb(222, 222, 222);
+}
+
 /* Sidebar Tags ColorsFix */
 .navTab:hover{
-  background-color: #c2c2ff !important;
+  background-color: #f9f6f9 !important;
+  color: #954ca3 !important;
+  transition: 0.3s;
 }
 .navTab.active{
-  background-color: #c2c2ff !important;
+  background-color: #e8dded !important;
+  color: #6c1688 !important;
+  transition: 0.4s;
 }
 
 /*    TDL tasks     */
@@ -208,6 +219,7 @@ body {
   height: 100%;
   display: flex;
   flex-direction: row;
+  padding-top: 75px;
   /* justify-content: center; */
   /* align-items: center; */
   font-family: -apple-system, sans-serif;
@@ -260,7 +272,7 @@ body {
 
 .media-block .media-body {
   display: block;
-  overflow: hidden;
+  /* overflow: hidden; */
   width: auto
 }
 
@@ -343,7 +355,7 @@ ul.col {
 
 .profile-timeline ul li .timeline-item-header {
   width: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .profile-timeline ul li .timeline-item-header img {
@@ -381,7 +393,7 @@ ul.col {
 }
 
 .timeline-options {
-  overflow: hidden;
+  /* overflow: hidden; */
   margin-top: 8px;
   margin-bottom: 5px;
   padding: 10px 0 10px 0;
@@ -409,16 +421,16 @@ ul.col {
 }
 
 .timeline-comment {
-  overflow: hidden;
+  /* overflow: hidden; */
   margin-bottom: 10px;
   width: 100%;
   border-bottom: 1px solid #f1f1f1;
   padding-bottom: 5px;
 }
 
-.timeline-comment .timeline-comment-header {
+/* .timeline-comment .timeline-comment-header {
   overflow: hidden;
-}
+} */
 
 .timeline-comment .timeline-comment-header img {
   width: 30px;
@@ -447,7 +459,7 @@ ul.col {
 }
 
 .post-options {
-  overflow: hidden;
+  /* overflow: hidden; */
   margin-top: 15px;
   margin-left: 15px;
 }
@@ -534,6 +546,7 @@ ul.col {
   align-items: center;
   font-family: -apple-system, sans-serif;
   flex-direction: row;
+  padding-top: 0px !important;
 }
 
 /**                 Like btn start                    **/
@@ -567,6 +580,7 @@ ul.col {
 
 .likeBtn svg path {
   transition: all 0.2s ease;
+  fill: gray !important;
 }
 
 .likeBtn:hover::after {
@@ -620,6 +634,7 @@ ul.col {
 
 .dislikeBtn svg path {
   transition: all 0.2s ease;
+  fill: gray !important;
 }
 
 .dislikeBtn:hover::after {
@@ -683,11 +698,11 @@ ul.col {
 
 /* commentsBtn ColorsFix */
 .commentBtn:hover svg path {
-  fill: #a886e7;
+  fill: #f5d17f;
 }
 
 .commentBtn.active svg path{
-  fill: #8e5aed !important; /* active color */
+  fill: #edc15a !important; /* active color */
 }
 
 .commentBtn:active svg {
@@ -740,11 +755,11 @@ a:hover.collapseBtn {
 
 /* shareBtn ColorsFix */
 .shareBtn:hover svg path {
-  fill: #50d8ab;
+  fill: #f8bb6b;
 }
 
 .shareBtn.active svg path{
-  fill: #30be8f !important; /* active color */
+  fill: #d78e3a !important; /* active color */
 }
 
 .shareBtn:active svg {
@@ -793,11 +808,11 @@ a:hover.collapseBtn {
 
 /* shareBtn ColorsFix */
 .bookmarkBtn:hover svg path {
-  fill: #7d9fe3;
+  fill: #ff6d6d;
 }
 
 .bookmarkBtn.active svg path{
-  fill: #4a74c7 !important; /* active color */
+  fill: #dc4d4d !important; /* active color */
 }
 
 
@@ -893,7 +908,7 @@ label[for='new-task'] {
 
 /* Task list */
 .todo li {
-  overflow: hidden;
+  /* overflow: hidden; */
   padding: 10px 0;
 }
 .todo li > input[type="checkbox"] {

@@ -9,7 +9,7 @@ $('document').ready(function () {
 // Highlights current page
 jQuery(function ($) {
     var path = window.location.href;
-    $('ul li a').each(function () {
+    $('ul li .navTab').each(function () {
         if (this.href === path) {
             $(this).addClass('active');
         }
@@ -79,6 +79,7 @@ elementsArray.forEach(function (elem) {
     });
 });
 
+// posting for demo
 const button = document.getElementById('postButton');
 
 button.onclick = function toggleDisplay() {
@@ -88,3 +89,7 @@ button.onclick = function toggleDisplay() {
         post.style.display = "block";
     }
 };
+
+function hideTable() {
+    document.getElementById(thisTable).style.display="hidden";
+}
