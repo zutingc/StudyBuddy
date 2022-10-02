@@ -13,7 +13,7 @@
 
     <div class="scrollbar scrollbar-pink bordered-pink thin">
         <div class="force-overflow"></div>
-      </div>
+    </div>
 
 </head>
 
@@ -32,11 +32,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#" style = "color: #9000c0">StudyBuddy</a>
+                <a class="navbar-brand" href="#" style="color: #9000c0">StudyBuddy</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse lateral-right" id="bs-example-navbar-collapse-1" >
+            <div class="collapse navbar-collapse lateral-right" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav bg-light" id="nav">
                     <li><a href="./home.html" class="navTab">Home</a></li>
                     <!-- <li class="dropdown">
@@ -82,10 +82,10 @@
                 <div class="card" style="margin-bottom:20px;">
                     <textarea class="form-control" rows="2" placeholder="What are you thinking?"></textarea>
                     <div class="clearfix" style="margin-top: 8px;">
-                        <button class="btn-sm pull-right postBtn" type="submit"><i
-                                class="fa fa-pencil fa-fw"></i>
+                        <button class="btn-sm pull-right postBtn" type="submit"><i class="fa fa-pencil fa-fw"></i>
                             Post</button>
-                        <a class="btn btn-trans btn-icon fa fa-video-camera add-tooltip" href="#" style="color:#9999FF"></a>
+                        <a class="btn btn-trans btn-icon fa fa-video-camera add-tooltip" href="#"
+                            style="color:#9999FF"></a>
                         <a class="btn btn-trans btn-icon fa fa-camera add-tooltip" href="#" style="color:#9999FF"></a>
                         <a class="btn btn-trans btn-icon fa fa-file add-tooltip" href="#" style="color:#9999FF"></a>
                     </div>
@@ -160,7 +160,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    
+
                                     <!---------------------- comments ------------------------------->
                                     <div class="collapse collapseComments">
                                         <div class="timeline-comment">
@@ -294,6 +294,7 @@
                     <!--------------------------------------------------------------->
                 </div>
             </ul>
+            <br>
             <!------------------------------------------- End Feed Content ------------------------------------------>
             <ul class="col col-lg-3">
                 <!---- filtering posts and search bar ------------>
@@ -301,6 +302,9 @@
                     <div class="card card-white grid-margin">
                         <div class="card-body">
                             <div class="timeline-item-header">
+                                <div align="center">
+                                    <h2 style="margin-top:0px !important; font-size: 18px;">Filtering</h2>
+                                </div>
                                 <!------- search bar ---------->
                                 <div class="search-wrapper w-form">
                                     <form><input class="quicksearch w-input form-control" data-name="Search"
@@ -313,30 +317,34 @@
 
                                 <div class="filters filterBox">
                                     <!------- Colorsfix --------->
-                                    
-                                        <a data-toggle="collapse" href="#collapseGrade" style="text-decoration: none;">
-                                            <p class="filterTitle" style="color: #5eaf11">Grade
+
+                                    <a data-toggle="collapse" href="#collapseGrade" style="text-decoration: none;">
+                                        <p class="filterTitle" style="color: #5eaf11">Grade
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                 fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
                                                 <path fill-rule="evenodd"
                                                     d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                                            </svg></p></a>
-                                        <div class="collapse in button-group js-radio-button-group post" data-filter-group="grade" id="collapseGrade">
-                                            <button class="button is-checked" data-filter="">All</button>
-                                            <button class="button" data-filter=".K12">K-12</button>
-                                            <button class="button" data-filter=".undergrad">Undergrad</button>
-                                            <button class="button" data-filter=".grad">Grad</button>
-                                        </div>
+                                            </svg></p>
+                                    </a>
+                                    <div class="collapse in button-group js-radio-button-group post"
+                                        data-filter-group="grade" id="collapseGrade">
+                                        <button class="button is-checked" data-filter="">All</button>
+                                        <button class="button" data-filter=".K12">K-12</button>
+                                        <button class="button" data-filter=".undergrad">Undergrad</button>
+                                        <button class="button" data-filter=".grad">Grad</button>
+                                    </div>
 
                                     <!------- Colorsfix --------->
-                                        <a data-toggle="collapse" href="#collapseSubject" style="text-decoration: none;">
-                                            <p class="filterTitle" style="color: #b2be13">Subject
+                                    <a data-toggle="collapse" href="#collapseSubject" style="text-decoration: none;">
+                                        <p class="filterTitle" style="color: #b2be13">Subject
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                 fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
                                                 <path fill-rule="evenodd"
                                                     d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                                            </svg></p></a>
-                                    <div class="collapse in button-group js-radio-button-group" data-filter-group="subject" id="collapseSubject">
+                                            </svg></p>
+                                    </a>
+                                    <div class="collapse in button-group js-radio-button-group"
+                                        data-filter-group="subject" id="collapseSubject">
                                         <button class="button is-checked" data-filter="">All</button>
                                         <button class="button" data-filter=".CS">CS</button>
                                         <button class="button" data-filter=".math">Math</button>
@@ -345,19 +353,20 @@
                                     </div>
 
                                     <!------- Colorsfix --------->
-                                        <a data-toggle="collapse" href="#collapseClass" style="text-decoration: none;">
-                                            <p class="filterTitle" style="color: #d7a62a">Class
+                                    <a data-toggle="collapse" href="#collapseClass" style="text-decoration: none;">
+                                        <p class="filterTitle" style="color: #d7a62a">Class
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                 fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
                                                 <path fill-rule="evenodd"
                                                     d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                                            </svg></p></a>
-                                    <div class="collapse in button-group js-radio-button-group" data-filter-group="class" id="collapseClass">
+                                            </svg></p>
+                                    </a>
+                                    <div class="collapse in button-group js-radio-button-group"
+                                        data-filter-group="class" id="collapseClass">
                                         <button class="button is-checked" data-filter="">All</button>
                                         <button class="button" data-filter=".preCalc">Pre-Calc</button>
                                         <button class="button" data-filter=".geometry">Geometry</button>
-                                        <button class="button" data-filter=".dataStructures">Data
-                                            Structures</button>
+                                        <button class="button" data-filter=".dataStructures">Data Structures</button>
                                     </div>
                                 </div>
 
@@ -371,7 +380,9 @@
                     <div class="card card-white grid-margin">
                         <div class="card-body">
                             <div class="timeline-item-header">
-                                <div align = "center"><h2>To Do List</h2></div>
+                                <div align="center">
+                                    <h2 style="margin-top: 0px !important; font-size: 25px;">To Do List</h2>
+                                </div>
                                 <div class="todo">
                                     <!-- <label for="new-task">Add Item</label>
                                     <div class = "container">
@@ -382,19 +393,31 @@
                                     <div style="border-bottom: 1px solid #ccc;"></div> -->
 
                                     <ul id="incomplete-tasks">
-                                      
+
                                     </ul>
-                                    <div class = "container">
-                                        <input id="new-task" type="text">
-                                        <button><div id = "add-button">Add</div></button>
+                                    <div class="container" style="display:flex;">
+                                        <div class="search-wrapper w-form">
+                                            <form><input size="50" class="quicksearch w-input form-control"
+                                                    placeholder=" Add new task" id="new-task" type="text"></form>
+                                        </div>
+
+                                        <div id="add-button" style="padding-left: 5px;">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z" />
+                                            </svg>
+                                        </div>
                                     </div>
                                     <br>
                                     <div style="border-bottom: 1px solid #ccc;"></div>
 
-                                    <div align = "center"><h3>Completed</h3></div>
+                                    <div align="center">
+                                        <h2 style="font-size: 18px;">Completed</h2>
+                                    </div>
                                     <ul id="completed-tasks">
-                                    </ul>         
-                                    <br>                         
+                                    </ul>
+                                    <br>
                                 </div>
                             </div>
                         </div>
@@ -404,7 +427,7 @@
 
 
             <!------------------------------------------- Start Personal Content ------------------------------------------>
-            
+
         </div>
     </div>
 
@@ -416,14 +439,14 @@
     <!-- partial -->
     <script src='https://code.jquery.com/jquery-3.1.1.slim.min.js'></script>
     <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
-    
-    
+
+
     <script src="./script.js"></script>
 
     <!-------------------- Script below contains isotope filtering JS. More info: https://codepen.io/desandro/pen/WyOZjx ----------------------->
     <script src="https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
     <script src="sort.js"></script>
-    <script src = "tdl.js"></script>
+    <script src="tdl.js"></script>
 </body>
 
 </html>

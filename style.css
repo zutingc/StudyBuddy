@@ -67,7 +67,7 @@ html {
 }
 
 .filterTitle {
-  font-size: 20px;
+  font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
   transition: 0.3s;
 }
@@ -95,6 +95,21 @@ html {
 .navTab.active{
   background-color: #e8dded !important;
   color: #6c1688 !important;
+}
+
+/*    TDL tasks     */
+
+.taskLabel {
+  display: block;
+  width: 72% !important;
+  overflow-y: none !important;
+  overflow-x: none !important;
+  overflow: none !important;
+  overflow-wrap: break-word;
+}
+
+.taskBtn svg path {
+  fill: #5c5c5c;
 }
 
 /************************************************* NAVBAR *************************************************/
