@@ -11,6 +11,10 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 
+    <div class="scrollbar scrollbar-pink bordered-pink thin">
+        <div class="force-overflow"></div>
+      </div>
+
 </head>
 
 <body>
@@ -75,12 +79,12 @@
             <!------------------------------------------- Start Feed Content ------------------------------------------>
 
             <ul class="col col-lg-7">
-                <div class="card" style="margin-bottom:2vh">
+                <div class="card" style="margin-bottom:20px;">
                     <textarea class="form-control" rows="2" placeholder="What are you thinking?"></textarea>
-                    <div class="mar-top clearfix">
-                        <button class="btn btn-sm btn-primary pull-right" type="submit"><i
+                    <div class="clearfix" style="margin-top: 8px;">
+                        <button class="btn-sm pull-right postBtn" type="submit"><i
                                 class="fa fa-pencil fa-fw"></i>
-                            Share</button>
+                            Post</button>
                         <a class="btn btn-trans btn-icon fa fa-video-camera add-tooltip" href="#" style="color:#9999FF"></a>
                         <a class="btn btn-trans btn-icon fa fa-camera add-tooltip" href="#" style="color:#9999FF"></a>
                         <a class="btn btn-trans btn-icon fa fa-file add-tooltip" href="#" style="color:#9999FF"></a>
@@ -88,7 +92,7 @@
                 </div>
                 <div class="grid">
                     <!------------------------- START POST -------------------------->
-                    <li class="timeline-item undergrad CS dataStructures">
+                    <li class="timeline-item eachPost undergrad CS dataStructures">
                         <div class="card card-white grid-margin" style="padding-bottom: 10px !important;">
                             <div class="card-body">
                                 <div class="timeline-item-header">
@@ -113,10 +117,10 @@
                                     </p>
                                     <!------------------------ buttons ----------------------------->
                                     <div class="timeline-options btnUI">
-                                        <span style="margin-right:5px;" id="numLikes">100</span>
+                                        <span class="likeCount" style="margin-right:5px;">100</span>
                                         <!------ need to implement like count ------>
                                         <div class="likeBtn">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
                                                 fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
                                                 <path
                                                     d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
@@ -133,7 +137,7 @@
                                             <a class="collapseBtn" data-toggle="collapse"
                                                 style="margin-right: 0 !important;">
                                                 <div class="commentBtn activeBtn">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
                                                         fill="currentColor" class="bi bi-chat-fill" viewBox="0 0 16 16">
                                                         <path
                                                             d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z" />
@@ -190,7 +194,7 @@
                     <!--------------------------------------------------------------->
 
                     <!------------------------- START POST -------------------------->
-                    <li class="timeline-item K12 math geometry">
+                    <li class="timeline-item eachPost K12 math geometry">
                         <div class="card card-white grid-margin" style="padding-bottom: 10px !important;">
                             <div class="card-body">
                                 <div class="timeline-item-header">
@@ -214,7 +218,7 @@
                                     </p>
                                     <!------------------------ buttons ----------------------------->
                                     <div class="timeline-options btnUI">
-                                        <span style="margin-right:5px;">100</span>
+                                        <span class="likeCount" style="margin-right:5px;">20</span>
                                         <!------ need to implement like count ------>
                                         <div class="likeBtn">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
@@ -298,7 +302,7 @@
                         <div class="card-body">
                             <div class="timeline-item-header">
                                 <!------- search bar ---------->
-                                <div class="search-wrapper w-form filterBox">
+                                <div class="search-wrapper w-form">
                                     <form><input class="quicksearch w-input form-control" data-name="Search"
                                             id="quicksearch" maxlength="256" name="Search" placeholder=" Search"
                                             type="text">
@@ -308,39 +312,51 @@
                                 <!----------- filtering checkboxes------------- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
 
                                 <div class="filters filterBox">
-                                    <!------- button details & collapse-->
-                                    <p class="filterTitle" style="color: #5eaf11">Grade
-                                        <a data-toggle="collapse" href="#collapseGrade">
+                                    <!------- Colorsfix --------->
+                                    
+                                        <a data-toggle="collapse" href="#collapseGrade" style="text-decoration: none;">
+                                            <p class="filterTitle" style="color: #5eaf11">Grade
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                 fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
                                                 <path fill-rule="evenodd"
                                                     d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                                            </svg></a></p>
-                                    <div class="collapse in" id="collapseGrade">
-                                        <div class="button-group js-radio-button-group post" data-filter-group="grade">
-                                            <button class="gradeBtn button is-checked" data-filter="">All</button>
-                                            <button class="gradeBtn button" data-filter=".K12">K-12</button>
-                                            <button class="gradeBtn button" data-filter=".undergrad">Undergrad</button>
-                                            <button class="gradeBtn button" data-filter=".grad">Grad</button>
+                                            </svg></p></a>
+                                        <div class="collapse in button-group js-radio-button-group post" data-filter-group="grade" id="collapseGrade">
+                                            <button class="button is-checked" data-filter="">All</button>
+                                            <button class="button" data-filter=".K12">K-12</button>
+                                            <button class="button" data-filter=".undergrad">Undergrad</button>
+                                            <button class="button" data-filter=".grad">Grad</button>
                                         </div>
-                                    </div>
-                                    <!------ end of row of buttons -->
 
-                                    <p class="filterTitle" style="color: #b2be13">Subject</p>
-                                    <div class="button-group js-radio-button-group" data-filter-group="subject">
-                                        <button class="subjectBtn button is-checked" data-filter="">All</button>
-                                        <button class="subjectBtn button" data-filter=".CS">CS</button>
-                                        <button class="subjectBtn button" data-filter=".math">Math</button>
-                                        <button class="subjectBtn button" data-filter=".science">Science</button>
-                                        <button class="subjectBtn button" data-filter=".english">English</button>
+                                    <!------- Colorsfix --------->
+                                        <a data-toggle="collapse" href="#collapseSubject" style="text-decoration: none;">
+                                            <p class="filterTitle" style="color: #b2be13">Subject
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                            </svg></p></a>
+                                    <div class="collapse in button-group js-radio-button-group" data-filter-group="subject" id="collapseSubject">
+                                        <button class="button is-checked" data-filter="">All</button>
+                                        <button class="button" data-filter=".CS">CS</button>
+                                        <button class="button" data-filter=".math">Math</button>
+                                        <button class="button" data-filter=".science">Science</button>
+                                        <button class="button" data-filter=".english">English</button>
                                     </div>
 
-                                    <p class="filterTitle" style="color: #d7a62a">Class</p>
-                                    <div class="button-group js-radio-button-group" data-filter-group="class">
-                                        <button class="classBtn button is-checked" data-filter="">All</button>
-                                        <button class="classBtn button" data-filter=".preCalc">Pre-Calc</button>
-                                        <button class="classBtn button" data-filter=".geometry">Geometry</button>
-                                        <button class="classBtn button" data-filter=".dataStructures">Data
+                                    <!------- Colorsfix --------->
+                                        <a data-toggle="collapse" href="#collapseClass" style="text-decoration: none;">
+                                            <p class="filterTitle" style="color: #d7a62a">Class
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                            </svg></p></a>
+                                    <div class="collapse in button-group js-radio-button-group" data-filter-group="class" id="collapseClass">
+                                        <button class="button is-checked" data-filter="">All</button>
+                                        <button class="button" data-filter=".preCalc">Pre-Calc</button>
+                                        <button class="button" data-filter=".geometry">Geometry</button>
+                                        <button class="button" data-filter=".dataStructures">Data
                                             Structures</button>
                                     </div>
                                 </div>
