@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head onload="loadHTML()">
     <title>Home - StudyBuddy</title>
     <link rel="icon" href="./Images/stickies-fill.svg" type="image/svg+xml">
 
@@ -18,61 +18,7 @@
 </head>
 
 <body>
-    <!-- partial:index.partial.html -->
-    <!-- Default bootstrap navbar example -->
-
-    <nav class="navbar navbar-default" style="z-index: 200;">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-
-                <a class="navbar-brand" href="#" style = "color: #9000c0"><b>StudyBuddy</b></a>
-                
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse lateral-right" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav bg-light" id="nav">
-                    <li><a href="./home.html" class="navTab">Home</a></li>
-                    <!-- <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                                aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Mission</a></li>
-                                <li><a href="#">Creators</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">Contact Us</a></li>
-                            </ul>
-                        </li> -->
-                    <li><a href="./test2.html" class="navTab">Bookmarks</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#" class="navTab">New Post</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                            aria-expanded="false" class="navTab">Profile <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#" class="navTab">Courses</a></li>
-                            <li><a href="#" class="navTab">Settings</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#" class="navTab">Log out</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-    </nav>
-    <!-- /Default bootstrap navbar example -->
-
-    <!---------------------------------------------- home feed v2 -------------------------------------------------->
-    <!-- https://www.bootdey.com/snippets/view/profile-with-contact-information -->
+ <div id="insertNav"></div>
 
     <div class="profile-timeline">
         <div class="homeWrapper row container flex-container ">
@@ -151,7 +97,7 @@
                                                             <path
                                                                 d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z" />
                                                         </svg>
-                                                    </div>&nbsp;
+                                                    </div>
                                                     <div class="bookmarkBtn activeBtn">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                             fill="currentColor" class="bi bi-bookmark-fill" viewBox="0 0 16 16">
@@ -194,7 +140,25 @@
                                         I would share with everyone. I made the google doc public, but let me know if there is any problem with accessing it. 
                                         Here is the link: 
                                         <br>
-                                        <a href>https://docs.google.com/document/d/1_kqT9U67ykmkiETOd21G-Yl2tgYb8fhWFrzeMe-SNQM/edit</a>
+                                        <a href>https://www.spanish.academy/blog/the-ultimate-spanish-study-guide-for-beginners/</a>
+                                        <table role="presentation" style="width:900px;padding:10px;border:1px solid #ccc!important;background:#ffffff;font-family: BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,'Fira Sans', 'Droid Sans' , 'Helvetica Neue' , Helvetica, Arial, sans-serif; ">
+                                            <tbody><tr>
+                                              <td style="vertical-align:top;padding:0;width:300px">
+                                                <a href="https://docs.google.com/document/d/1_kqT9U67ykmkiETOd21G-Yl2tgYb8fhWFrzeMe-SNQM/edit" id="myimagelink"><img onerror="this.style.display='none'" src="https://lh3.googleusercontent.com/ZMch6OX5ZgxGHzbX_WwNwdVb-IpRfVvYbdLm13iohYyzfMxVLWimHj53WWYoDBgrJ7ogeyZfCdxgCA=w1200-h630-p" id="myimage" style="width: 300px; height: 200px; object-fit: scale-down; object-position: center center; display: block;"></a>
+                                              </td>
+                                      
+                                              <td>
+                                                <div style="margin-left:1rem;">
+                                                  <div style="margin-bottom:0.5rem;">
+                                                    <a href="https://docs.google.com/document/d/1_kqT9U67ykmkiETOd21G-Yl2tgYb8fhWFrzeMe-SNQM/edit" id="mytitle" style="font-size:1.2rem;font-weight:400;text-decoration:none;color:black">SASE Hackathon Notes</a>
+                                      
+                                                  </div>
+                                                  <div id="mydescription" style="color:dimgray;margin-bottom:0.5rem">StudyBuddy aka. Khan academy but social media I was thinking we could make an app called StudyBuddy that will allow students to upload resources (PDFS, links, images) they find on the internet &amp; other general tips, which will then be categorized into grades/majors, classes, and so forth for the ...</div>
+                                                  <a href="https://docs.google.com/document/d/1_kqT9U67ykmkiETOd21G-Yl2tgYb8fhWFrzeMe-SNQM/edit" id="myurl" style="text-decoration: none">https://docs.google.com/document/d/1_kqT9U67ykmkiETOd21G-Yl2tgYb8fhWFrzeMe-SNQM/edit</a>
+                                                </div>
+                                              </td>
+                                            </tr>
+                                          </tbody></table>
                                     </p>
                                     <!------------------------ buttons ----------------------------->
                                     <div class="timeline-options btnUI">
@@ -314,7 +278,7 @@
                                                     <path
                                                         d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z" />
                                                 </svg>
-                                            </div>&nbsp;
+                                            </div>
                                             <div class="bookmarkBtn activeBtn">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                                     fill="currentColor" class="bi bi-bookmark-fill" viewBox="0 0 16 16">
@@ -409,7 +373,7 @@
                                                     <path
                                                         d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z" />
                                                 </svg>
-                                            </div>&nbsp;
+                                            </div>
                                             <div class="bookmarkBtn activeBtn">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                                     fill="currentColor" class="bi bi-bookmark-fill" viewBox="0 0 16 16">
@@ -455,7 +419,6 @@
                                     <!------------------------ buttons ----------------------------->
                                     <div class="timeline-options btnUI">
                                         <span class="likeCount" style="margin-right:5px;">23</span>
-                                        <!------ need to implement like count ------>
                                         <div class="likeBtn">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
                                                 fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
@@ -487,7 +450,7 @@
                                                     <path
                                                         d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z" />
                                                 </svg>
-                                            </div>&nbsp;
+                                            </div>
                                             <div class="bookmarkBtn activeBtn">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                                     fill="currentColor" class="bi bi-bookmark-fill" viewBox="0 0 16 16">
@@ -527,7 +490,7 @@
                         <div class="card-body">
                             <div class="timeline-item-header">
                                 <div align="center">
-                                    <h2 style="margin-top:0px !important; font-size: 18px;">Filtering</h2>
+                                    <h2 style="margin-top:0px !important; font-size: 20px;">Filtering</h2>
                                 </div>
                                 <!------- search bar ---------->
                                 <div class="search-wrapper w-form">
@@ -607,7 +570,7 @@
                             <div class="timeline-item-header">
                             
                                 <div align="center">
-                                    <h2 style="margin-top: 0px !important; font-size: 25px;">To Do List</h2>
+                                    <h2 style="margin-top: 0px !important; font-size: 20px;">To Do List</h2>
                                 </div>
                                 <div class="todo">
                                     <!-- <label for="new-task">Add Item</label>
@@ -629,7 +592,7 @@
 
                                         <div id="add-button" style="padding-left: 5px;">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+                                                fill="#707070" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
                                                 <path
                                                     d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z" />
                                             </svg>
@@ -667,12 +630,14 @@
     <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
 
 
-    <script src="./script.js"></script>
+    <script src="./Scripts/script.js"></script>
 
     <!-------------------- Script below contains isotope filtering JS. More info: https://codepen.io/desandro/pen/WyOZjx ----------------------->
     <script src="https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
-    <script src="sort.js"></script>
-    <script src="tdl.js"></script>
+    <script src="./sort.js"></script>
+    <script src="./Scripts/tdl.js"></script>
+    <!-- <script src="./Scripts/linkPreview.js"></script> -->
+    <script></script>
 </body>
 
 </html>

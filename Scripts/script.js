@@ -9,7 +9,7 @@ $('document').ready(function () {
 // Highlights current page
 jQuery(function ($) {
     var path = window.location.href;
-    $('ul li a').each(function () {
+    $('ul li .navTab').each(function () {
         if (this.href === path) {
             $(this).addClass('active');
         }
@@ -88,3 +88,12 @@ button.onclick = function toggleDisplay() {
         post.style.display = "block";
     }
 };
+
+// fill in from common.html
+function addCommon() {
+    fetch('common.html')
+        .then(response => response.text())
+        .then(text => document.getElementById('insertNav').innerHTML = text);
+    
+}
+addCommon();

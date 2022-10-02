@@ -6,6 +6,7 @@
 
 html {
   overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 .row {
   margin-left: 0 !important;
@@ -67,8 +68,7 @@ html {
 }
 
 .filterTitle {
-  font-size: 18px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
   transition: 0.3s;
 }
 
@@ -88,9 +88,14 @@ html {
   padding: 4px 9px;
 }
 
+.is-checked {
+  background-color: rgb(222, 222, 222);
+}
+
 /* Sidebar Tags ColorsFix */
 .navTab:hover{
-  background-color: #e7e7e7 !important;
+  background-color: #f9f6f9 !important;
+  color: #954ca3 !important;
 }
 .navTab.active{
   background-color: #e8dded !important;
@@ -209,6 +214,7 @@ body {
   height: 100%;
   display: flex;
   flex-direction: row;
+  padding-top: 75px;
   /* justify-content: center; */
   /* align-items: center; */
   font-family: -apple-system, sans-serif;
@@ -535,6 +541,7 @@ ul.col {
   align-items: center;
   font-family: -apple-system, sans-serif;
   flex-direction: row;
+  padding-top: 0px !important;
 }
 
 /**                 Like btn start                    **/
@@ -568,6 +575,7 @@ ul.col {
 
 .likeBtn svg path {
   transition: all 0.2s ease;
+  fill: #707070 !important;
 }
 
 .likeBtn:hover::after {
@@ -621,6 +629,7 @@ ul.col {
 
 .dislikeBtn svg path {
   transition: all 0.2s ease;
+  fill: #707070 !important;
 }
 
 .dislikeBtn:hover::after {
