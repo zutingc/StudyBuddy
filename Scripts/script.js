@@ -79,6 +79,7 @@ elementsArray.forEach(function (elem) {
     });
 });
 
+// posting for demo
 const button = document.getElementById('postButton');
 
 button.onclick = function toggleDisplay() {
@@ -89,11 +90,6 @@ button.onclick = function toggleDisplay() {
     }
 };
 
-// fill in from common.html
-function addCommon() {
-    fetch('common.html')
-        .then(response => response.text())
-        .then(text => document.getElementById('insertNav').innerHTML = text);
-    
+function hideTable() {
+    document.getElementById(thisTable).style.display="hidden";
 }
-addCommon();
