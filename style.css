@@ -90,11 +90,10 @@ html {
 
 /* Sidebar Tags ColorsFix */
 .navTab:hover{
-  background-color: #e7e7e7 !important;
+  background-color: #c2c2ff !important;
 }
 .navTab.active{
-  background-color: #e8dded !important;
-  color: #6c1688 !important;
+  background-color: #c2c2ff !important;
 }
 
 /*    TDL tasks     */
