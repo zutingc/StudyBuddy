@@ -97,13 +97,11 @@ html {
 
 /* Sidebar Tags ColorsFix */
 .navTab:hover{
-  background-color: #f9f6f9 !important;
-  color: #954ca3 !important;
+  background-color: #c2c2ff !important;
   transition: 0.3s;
 }
 .navTab.active{
-  background-color: #e8dded !important;
-  color: #6c1688 !important;
+  background-color: #c2c2ff !important;
   transition: 0.4s;
 }
 
